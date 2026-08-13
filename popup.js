@@ -9,7 +9,7 @@ const quickBtns = document.querySelectorAll('.quick-btn');
 const audioPlayer = document.getElementById('audioPlayer');
 const langSelectElement = document.getElementById('langSelect');
 
-const BACKEND_URL = 'http://127.0.0.1:5002';
+const BACKEND_URL = 'https://helpbotcbs-production.up.railway.app';
 const CHAT_STORAGE_KEY = 'chatHistory';
 const LANG_STORAGE_KEY = 'selectedLanguage';
 const CONVERSATION_STORAGE_KEY = 'conversationId';
