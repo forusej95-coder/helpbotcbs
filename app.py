@@ -124,7 +124,7 @@ CORS(
 
 CONVERSATIONS = {}
 
-MAX_HISTORY_MESSAGES = 20
+MAX_HISTORY_MESSAGES = 5
 
 
 # ============================================================
@@ -1371,14 +1371,15 @@ If "{selected_lang_name}" is English, answer normally in English.
 
             input=input_messages,
 
-            tools=[
-                {
-                    "type": "file_search",
-                    "vector_store_ids": [
-                        VECTOR_STORE_ID
-                    ]
-                }
-            ]
+                tools=[
+            {
+                "type": "file_search",
+                "vector_store_ids": [
+                    VECTOR_STORE_ID
+                ],
+                "max_num_results": 6
+            }
+        ]
         )
 
 
